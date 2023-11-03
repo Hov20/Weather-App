@@ -77,17 +77,22 @@ export const WeatherApp = () => {
     }
   return (
     <div className="container ">
+      <h1>Weather Now</h1>
       <div className="top-bar">
         <input type="text" className="cityInput" placeholder="Search" />
         <div className="search-icon"  onClick={()=>{search()}}>
           <img src={search_icon} alt="" />
         </div>
       </div>
-      <div className="weather-image">
-        <img src={wicon } alt="" />
+      <div className="infoContent">
+        <div className="weatherInfo">
+          <div className="weather-temp">24ᴼc</div>
+          <div className="weather-location">London</div>
+        </div>
+        <div className="weather-image">
+          <img src={wicon } alt="Weather" />
+        </div>
       </div>
-      <div className="weather-temp">24ᴼc</div>
-      <div className="weather-location">London</div>
       <div className="data-container">
         <div className="element">
           <img src={humidity_icon} alt="" className="icon" />
